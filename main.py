@@ -2,7 +2,7 @@ import tkinter as tk
 import requests
 
 def weather(cityname):
-    response=requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid=941d767571af45f3967fc0b3b8ba1c5e&units=metric')
+    response=requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid=YOUR_API_KEY')
     w=response.json()['main']
     y=response.json()['coord']
     str=f"Latitude: {y['lat']}\nLongitute: {y['lon']}\nTemperature: {w['temp']}\nFeels like: {w['feels_like']}\nMaximum temperature: {w['temp_max']}\nMinimum temperature: {w['temp_min']}\nHumidity: {w['humidity']}\nPressure: {w['pressure']}\nWind Speed: {response.json()['wind']['speed']}"
