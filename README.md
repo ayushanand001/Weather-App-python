@@ -23,9 +23,9 @@ A simple Python desktop application that displays current weather information fo
 
 2. **Install required libraries:**  
    Open your terminal or command prompt and run:
-   '''
+   ```
    pip install requests
-   '''  
+   ```  
 *Tkinter is included with standard Python installations. If you encounter issues, install it using:*
 - For Ubuntu/Debian:
   ```
@@ -41,16 +41,17 @@ A simple Python desktop application that displays current weather information fo
 ## Usage
 
 1. **Clone the repository:**
+```
 git clone https://github.com/yourusername/weather-forecast-app.git
 cd weather-forecast-app
-
-2. **Set your OpenWeatherMap API key:**  
+```
+3. **Set your OpenWeatherMap API key:**  
 Replace `YOUR_API_KEY` in the code with your actual OpenWeatherMap API key (see [API Key Setup](#api-key-setup)).
 
-3. **Run the application:**
-'''
+4. **Run the application:**
+```
 python main.py
-'''
+```
 
 5. **How it works:**  
 - Enter a city name in the input field.
@@ -65,9 +66,9 @@ This app uses the OpenWeatherMap API, which requires a free API key.
 
 1. Sign up at [OpenWeatherMap](https://openweathermap.org/api) to get your API key.
 2. In the code, find the line:
-'''
+```
 response = requests.get(f'https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid=YOUR_API_KEY')
-'''
+```
 4. Replace `YOUR_API_KEY` with your actual API key.
 
 ---
